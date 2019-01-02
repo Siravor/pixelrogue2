@@ -1,0 +1,46 @@
+
+
+
+<!--button (click)="show = !show">{{show ? 'hide' : 'show'}}</button>
+show = {{show}}
+<br>
+<div-- *ngIf="show">Text to show</div-->
+
+<div class="row">
+  <div class="col s12 m12">
+    <div class="card blue-grey darken-3">
+
+
+
+      </div>
+      <div class="embed-responsive">
+        <iframe width="100%" height="400" [src]="videoLink | safe"></iframe>
+      </div>
+
+    <div class="card-action">
+      <div align="center">
+        <!--a style="color: #ba68c8">{{ videoName }}</a-->
+        <a class="waves-effect waves-light btn deep-purple lighten-2 z-depth-4" routerLink="comission">{{ videoName }}</a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+<!--div *ngIf="">
+  <router-outlet></router-outlet>
+</div-->
+
+<!--div-- class="row">
+  <div class="col s6 m6">
+    <div class="input-field">
+      <input type="text" [value]="videoName"
+             
+      
+      >
+    </div>
+  </div>
+</div-->

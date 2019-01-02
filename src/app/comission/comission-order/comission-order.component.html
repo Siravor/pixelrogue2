@@ -1,0 +1,128 @@
+
+<form class="col s12">
+<div class="section"><h2 style="color: #ba68c8"> Get in touch</h2></div>
+
+<div class="container">
+
+  <div class="section" style="color: #ba68c8">Enter your contact here, usernames are ok also</div>
+
+  <p></p>
+  <div class="row">
+
+
+      <div class="row">
+        <div class="input-field col s6">
+          <i class="material-icons prefix">account_circle</i>
+          <input #_xName id="first_name" type="text" class="validate" (input)="xName = _xName.value"  >
+          <label for="first_name">First Name * </label>
+        </div>
+        <div class="input-field col s6">
+          <input #_yName id="last_name" type="text" class="validate" (input)="yName = _yName.value">
+          <label for="last_name">Last Name</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">subject</i>
+          <input id="subject" (click)="subjectEvent()" type="text" class="validate">
+          <label for="first_name">Subject * </label>
+        </div>
+      </div>
+
+
+
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">email</i>
+          <input id="email" type="email" class="validate">
+          <label for="email">Email Address *</label>
+        </div>
+      </div>
+
+
+      <div class="section" style="color: #ba68c8">What work of mine have you seen that inspired you to reach out, this is also the style i'll be aiming for to mach for your Commission.</div>
+
+      <p></p>
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">wallpaper</i>
+          <textarea id="myWork" class="materialize-textarea"></textarea>
+          <label for="textarea1">My Work </label>
+        </div>
+      </div>
+
+      <div class="section" style="color: #ba68c8">Detailed information of what you want</div>
+
+      <p></p>
+
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">speaker_notes</i>
+          <textarea id="textarea1" class="materialize-textarea"></textarea>
+          <label for="textarea1">Message *</label>
+        </div>
+      </div>
+
+
+      <p>
+        <input type="checkbox" id="twitch" />
+        <label for="twitch">Stream Progress on twitch?</label>
+      </p>
+      <label>Please select if I'm allowed to stream the making of your Commission progress on Twich.tv/PixelRogue (my twitch channel)</label>
+      <p></p>
+      <div class="row">
+
+        <div class="input-field col s4">
+          <label for="twitch">Deadline (optional)</label>
+          <p></p>
+          <div class="input-field col s3"><input type="text">DD</div>
+          <div class="input-field col s3"><input type="text">MM</div>
+          <div class="input-field col s3"><input type="text">YY</div>
+          <div class="input-field col s12">
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12">
+          <section>Agreement*</section>
+          <p><label>1° I , the client, hire pixelrogue for pixelrogue's style, and not to emulate that of another artist or source.</label></p>
+          <p><label>2° If  I, the client, wants revisions on Commissions, I understand that there is a fee of $2-$14 depending on time and complexity of said revisions, after the one free revision i ,the client, have.</label></p>
+          <p><label>3° I , the client, understand that there is a security deposit of $14 up front, or a security deposit of the full price of the commission if the price is below $14. The security deposit will be paid before any commission work begins.</label></p>
+          <p>
+            <input type="checkbox" id="agre" />
+            <label for="agre">accept</label>
+          </p>
+        </div>
+      </div>
+
+
+
+
+    <div class="row">
+        <div class="col s6">
+          <div class="waves-button-input">
+          <a class="waves-effect  btn deep-purple lighten-2">
+            Submit
+
+          </a>
+          </div>
+        </div>
+      <div class="col s6">
+        <div *ngIf="show">
+          <a class="btn deep-purple lighten-2" (click)="teste();">
+            <i class="material-icons">sentiment_dissatisfied</i>
+            rog
+          </a>
+        </div>
+      </div>
+
+
+
+      </div>
+
+
+
+  </div>
+  </div>
+  </form>
